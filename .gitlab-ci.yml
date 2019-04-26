@@ -2,8 +2,8 @@
   stage: deploy
   before_script:
     - npm install
-  tags:
-    - rnbuild
+  # tags:
+  #   - rnbuild
   after_script:
     - cp $OUTPUT_PATH.$FILE_TYPE $CI_PROJECT_NAME-$CI_COMMIT_REF_NAME.$FILE_TYPE
   artifacts:
