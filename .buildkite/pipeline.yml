@@ -1,8 +1,18 @@
 # BuildKite Pipeline
 
 steps:
-  - command: "echo \"hello\""
-  - command: "yarn install"
+  - label: "hello"
+    command: "echo \"hello\""
+
+  - label: "install dependencies"
+    command: "yarn install"
+
+  - label: "run tests"
+    command: "yarn run test"
+
+  - label: "check node version"
+    command: "node --version"
+
     plugins:
       - docker#v3.1.0:
           image: "node:10"  
