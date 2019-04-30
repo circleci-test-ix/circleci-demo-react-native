@@ -4,15 +4,16 @@ steps:
   - label: "hello"
     command: "echo \"hello\""
 
-  - label: "install dependencies"
-    command: "yarn install"
-
   - label: "run tests"
-    command: "yarn run test"
+    commands:
+      - "yarn install"
+      - "yarn run test"
+    plugins:
+      - docker#v3.1.0:
+          image: "node:10"  
 
   - label: "check node version"
     command: "node --version"
-
     plugins:
       - docker#v3.1.0:
           image: "node:10"  
