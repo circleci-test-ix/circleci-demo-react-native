@@ -2,6 +2,7 @@
 
 steps:
   - command: "echo \"hello\""
+  - command: "yarn install"
     plugins:
       - docker#v3.1.0:
-          image: "node:10"
+          image: "node:10"  
