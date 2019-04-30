@@ -1,0 +1,7 @@
+# BuildKite Pipeline
+
+steps:
+  - command: "echo \"hello\""
+    plugins:
+      - docker#v3.1.0:
+          image: "node:10"
