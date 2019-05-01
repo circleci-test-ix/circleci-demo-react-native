@@ -4,7 +4,7 @@
 
 [![Build Status](https://badge.buildkite.com/d26c771d2c5e9861cb35954c76e93d7588a20481acb0d1fb25.svg)](https://buildkite.com/imaginex-consulting-dev/circleci-react-native-sample)
 
-[![Build Status](
+[Build Status](
 https://codebuild.us-east-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieEdjUHExNVJBRDlwd0lERVBvaDBGZDF6VE52MnJPTmphdHJVU1Zaemx0VWo5SkFSTUV6T2RLS2VnZzdLdDc1SDhjV3haQVc5bFIxbzJSZUY2cTBCdTg0PSIsIml2UGFyYW1ldGVyU3BlYyI6IjNBUkN3UXMzZ3k1Q2FqZHYiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 ## Building and running locally
