@@ -5,6 +5,9 @@ image: node:8
 build:
   script: "yarn install"
 
+test:
+  script: "yarn run test"
+
 # .job_template: &job_deploy
 #   stage: deploy
 #   before_script:
