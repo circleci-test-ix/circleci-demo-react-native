@@ -11,6 +11,7 @@ android:
   stage: android
   image: ruby:2.6
   script:
+    - cd android
     - bundle install
 
 stages:
