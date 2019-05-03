@@ -1,7 +1,8 @@
 # test
 
 build:
-  services: node:8
+  services:
+    - node:8
   script:
     - yarn install
     - yarn run test
