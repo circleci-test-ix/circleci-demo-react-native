@@ -18,7 +18,7 @@ build:
 
 android:
   stage: apps
-  image: jruby:9.2
+  image: jruby:9.2-jdk
   before_script:
     - apt-get --quiet update --yes
     - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
