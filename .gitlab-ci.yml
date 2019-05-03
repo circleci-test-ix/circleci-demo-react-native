@@ -18,10 +18,10 @@ build:
 
 android:
   stage: apps
-  image: jruby:9.2-jdk
+  image: openjdk:8-jdk
   before_script:    
     - apt-get --quiet update --yes
-    - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
+    - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1 build-essential ruby ruby-dev
     - curl -sL https://deb.nodesource.com/setup_8.x | bash -
     - apt-get install -y nodejs
     - wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-${ANDROID_SDK_TOOLS}.zip
@@ -35,6 +35,7 @@ android:
     - set +o pipefail
     - yes | android-sdk-linux/tools/bin/sdkmanager --licenses
     - set -o pipefail    
+    - gem install bundle
   script:
     - cd android
     - bundle install
