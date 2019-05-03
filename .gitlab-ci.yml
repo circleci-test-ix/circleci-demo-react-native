@@ -6,6 +6,11 @@ build:
     - yarn install
     - yarn run test
 
+android:
+  image: runmymind/docker-android-sdk:ubuntu-standalone
+  script:
+    - bundle install
+
 # .job_template: &job_deploy
 #   stage: deploy
 #   before_script:
