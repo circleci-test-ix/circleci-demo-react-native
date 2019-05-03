@@ -8,15 +8,23 @@ build:
     - yarn run test
 
 android:
-  stage: android
+  stage: apps
   image: ruby:2.6
   script:
     - cd android
     - bundle install
+    - mkdir -p test-results/fastlane
+    - bundle exec fastlane test
+    - mv fastlane/report.xml test-results/fastlane
+
+ios:
+  stage: apps
+  script:
+    - echo "running ios"
 
 stages:
-  - build
-  - android
+  - node
+  - apps
 
 # .job_template: &job_deploy
 #   stage: deploy
