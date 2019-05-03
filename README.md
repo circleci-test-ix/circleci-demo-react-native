@@ -2,6 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/CircleCI-Public/circleci-demo-react-native.svg?style=svg)](https://circleci.com/gh/CircleCI-Public/circleci-demo-react-native)
 
+[![pipeline status](https://gitlab.com/ryanmanns-ix/circleci-demo-react-native/badges/master/pipeline.svg)](https://gitlab.com/ryanmanns-ix/circleci-demo-react-native/commits/master)
+
 [![Build Status](https://badge.buildkite.com/d26c771d2c5e9861cb35954c76e93d7588a20481acb0d1fb25.svg)](https://buildkite.com/imaginex-consulting-dev/circleci-react-native-sample)
 
 ![Build Status](
