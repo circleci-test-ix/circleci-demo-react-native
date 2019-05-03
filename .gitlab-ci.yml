@@ -1,14 +1,17 @@
 # test
 
+# Cache modules in between jobs
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - node_modules/
+
 build:
   stage: build
   image: node:8
   script:
     - yarn install
     - yarn run test
-  cache:
-    paths:
-      - node_modules
 
 android:
   stage: apps
