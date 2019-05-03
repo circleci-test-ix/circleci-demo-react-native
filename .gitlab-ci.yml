@@ -1,3 +1,5 @@
+# test
+
 .job_template: &job_deploy
   stage: deploy
   before_script:
