@@ -1,12 +1,10 @@
 # test
 
-image: node:8
-
 build:
-  script: "yarn install"
-
-test:
-  script: "yarn run test"
+  services: node:8
+  script:
+    - yarn install
+    - yarn run test
 
 # .job_template: &job_deploy
 #   stage: deploy
