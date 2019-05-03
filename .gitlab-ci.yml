@@ -9,7 +9,7 @@ build:
 
 android:
   stage: apps
-  image: ruby:2.6
+  image: jruby:9.2
   script:
     - cd android
     - bundle install
