@@ -23,7 +23,7 @@ ios:
     - echo "running ios"
 
 stages:
-  - node
+  - build
   - apps
 
 # .job_template: &job_deploy
