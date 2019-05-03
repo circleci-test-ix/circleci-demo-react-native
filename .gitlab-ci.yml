@@ -19,9 +19,9 @@ build:
 android:
   stage: apps
   image: jruby:9.2-jdk
-  services: 
-    - node:8  
   before_script:
+    - curl -sL https://deb.nodesource.com/setup_8.x | bash -
+    - apt-get install -y nodejs
     - apt-get --quiet update --yes
     - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
     - wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-${ANDROID_SDK_TOOLS}.zip
