@@ -1,15 +1,21 @@
 # test
 
 build:
+  stage: build
   image: node:8
   script:
     - yarn install
     - yarn run test
 
 android:
+  stage: android
   image: runmymind/docker-android-sdk:ubuntu-standalone
   script:
     - bundle install
+
+stages:
+  - build
+  - android
 
 # .job_template: &job_deploy
 #   stage: deploy
