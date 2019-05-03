@@ -6,6 +6,9 @@ build:
   script:
     - yarn install
     - yarn run test
+  cache:
+    paths:
+      - node_modules
 
 android:
   stage: apps
