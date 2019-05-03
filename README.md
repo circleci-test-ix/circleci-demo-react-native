@@ -1,15 +1,15 @@
 # CircleCI Demo React Native App
 
-[![CircleCI](https://circleci.com/gh/CircleCI-Public/circleci-demo-react-native.svg?style=svg)](https://circleci.com/gh/CircleCI-Public/circleci-demo-react-native)
+CircleCI: [![CircleCI](https://circleci.com/gh/CircleCI-Public/circleci-demo-react-native.svg?style=svg)](https://circleci.com/gh/CircleCI-Public/circleci-demo-react-native)
 
-[![pipeline status](https://gitlab.com/ryanmanns-ix/circleci-demo-react-native/badges/master/pipeline.svg)](https://gitlab.com/ryanmanns-ix/circleci-demo-react-native/commits/master)
+GitLab: [![pipeline status](https://gitlab.com/ryanmanns-ix/circleci-demo-react-native/badges/master/pipeline.svg)](https://gitlab.com/ryanmanns-ix/circleci-demo-react-native/commits/master)
 
-[![Build Status](https://badge.buildkite.com/d26c771d2c5e9861cb35954c76e93d7588a20481acb0d1fb25.svg)](https://buildkite.com/imaginex-consulting-dev/circleci-react-native-sample)
+Buildkite: [![Build Status](https://badge.buildkite.com/d26c771d2c5e9861cb35954c76e93d7588a20481acb0d1fb25.svg)](https://buildkite.com/imaginex-consulting-dev/circleci-react-native-sample)
 
-![Build Status](
+AWS: ![Build Status](
 https://codebuild.us-east-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieEdjUHExNVJBRDlwd0lERVBvaDBGZDF6VE52MnJPTmphdHJVU1Zaemx0VWo5SkFSTUV6T2RLS2VnZzdLdDc1SDhjV3haQVc5bFIxbzJSZUY2cTBCdTg0PSIsIml2UGFyYW1ldGVyU3BlYyI6IjNBUkN3UXMzZ3k1Q2FqZHYiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
-[![Build Status](https://app.bitrise.io/app/0401cf1dabc1a038/status.svg?token=e-K2oonKyQ5Zy65WHC2YNw)](https://app.bitrise.io/app/0401cf1dabc1a038)
+Bitrise: [![Build Status](https://app.bitrise.io/app/0401cf1dabc1a038/status.svg?token=e-K2oonKyQ5Zy65WHC2YNw)](https://app.bitrise.io/app/0401cf1dabc1a038)
 
 ## Building and running locally
 
