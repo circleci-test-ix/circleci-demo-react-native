@@ -9,7 +9,7 @@ build:
 
 android:
   stage: android
-  image: runmymind/docker-android-sdk:ubuntu-standalone
+  image: ruby:2.6
   script:
     - bundle install
 
