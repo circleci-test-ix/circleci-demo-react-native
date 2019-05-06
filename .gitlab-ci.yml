@@ -47,10 +47,13 @@ android:
 
 ios:
   stage: apps
-  tags:
-    - ios
+  image: node:8  
   script:
     - echo "running ios"
+    - yarn install
+    - yarn run test
+  tags:
+    - ios    
 
 stages:
   - build
