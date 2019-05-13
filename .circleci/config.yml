@@ -68,6 +68,7 @@ jobs:
       - run:
           name: fastlane tests
           command: |
+            yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses || if [ $? -ne '141' ]; then exit $?; fi;
             mkdir -p test-results/fastlane
             bundle exec fastlane test
             mv fastlane/report.xml test-results/fastlane
