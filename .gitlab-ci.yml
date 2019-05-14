@@ -52,7 +52,7 @@ ios:
     - cd ios    
     - bundler install --path vendor/bundle
     - mkdir -p test-results/fastlane
-    - fastlane test
+    - bundle exec fastlane test
     - mv fastlane/report.xml test-results/fastlane
   tags:
     - ios    
