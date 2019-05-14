@@ -49,8 +49,9 @@ ios:
   stage: apps
   image: node:8  
   script:
-    - yarn install
-    - cd ios    
+    - yarn install    
+    - cd node_modules/react-native/scripts && ./ios-install-third-party.sh && cd ../../../ios
+    - cd node_modules/react-native/third-party/glog-0.3.5/ && ../../scripts/ios-configure-glog.sh && cd ../../../../ios
     - bundler install --path vendor/bundle
     - mkdir -p test-results/fastlane
     - fastlane test
