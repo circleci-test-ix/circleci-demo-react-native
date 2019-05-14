@@ -48,11 +48,10 @@ android:
 ios:
   stage: apps
   image: node:8  
-  before_script:    
-    - bundle install
   script:
     - cd ios
-    # - bundler install --path vendor/bundle
+    - bundle install
+    # - bunlder install --path vendor/bundle
     - mkdir -p test-results/fastlane
     - fastlane test
     - mv fastlane/report.xml test-results/fastlane
