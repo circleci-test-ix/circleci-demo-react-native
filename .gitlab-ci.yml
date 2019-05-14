@@ -49,10 +49,11 @@ ios:
   stage: apps
   image: node:8  
   script:
+    - yarn install
     - cd ios    
     - bundler install --path vendor/bundle
     - mkdir -p test-results/fastlane
-    - bundle exec fastlane test
+    - fastlane test
     - mv fastlane/report.xml test-results/fastlane
   tags:
     - ios    
