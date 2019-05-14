@@ -2,6 +2,8 @@ variables:
   ANDROID_COMPILE_SDK: "28"
   ANDROID_BUILD_TOOLS: "28.0.2"
   ANDROID_SDK_TOOLS:   "4333796"
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
 
 # Cache modules in between jobs
 cache:
@@ -46,12 +48,13 @@ android:
 ios:
   stage: apps
   image: node:8  
+  before_script:    
+    - bundle install
   script:
-    - echo "running ios"
     - cd ios
-    - bundler install --path vendor/bundle
+    # - bundler install --path vendor/bundle
     - mkdir -p test-results/fastlane
-    - bundle exec fastlane test
+    - fastlane test
     - mv fastlane/report.xml test-results/fastlane
   tags:
     - ios    
