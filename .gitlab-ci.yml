@@ -16,7 +16,7 @@ build:
   image: node:8  
   script:
     - yarn install
-    - yarn run test
+    # - yarn run test
 
 android:
   stage: apps
