@@ -51,7 +51,7 @@ ios:
   script:
     - yarn install    
     - cd node_modules/react-native/scripts && ./ios-install-third-party.sh
-    - cd third-party/glog-0.3.4/ && ./configure.sh && cd ../../../../ios
+    - cd third-party/glog-0.3.4/ && ./configure && cd ../../../../ios
     - bundler install --path vendor/bundle
     - mkdir -p test-results/fastlane
     - fastlane test
