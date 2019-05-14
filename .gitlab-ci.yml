@@ -47,9 +47,9 @@ android:
 
 ios:
   stage: apps
-  image: node:8  
   script:
     - yarn install    
+    - cd ios
     # - cd node_modules/react-native/scripts && ./ios-install-third-party.sh
     # - cd third-party/glog-0.3.4/ && ./configure && cd ../../../../ios
     - bundler install --path vendor/bundle
