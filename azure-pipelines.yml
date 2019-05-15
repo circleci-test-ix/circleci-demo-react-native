@@ -6,6 +6,8 @@
 trigger:
 - azure
 
+container: node:8
+
 stages:
 - stage: 'build'
   jobs:
@@ -16,5 +18,4 @@ stages:
       - script: |
         yarn install
         yarn test
-      displayName: 'yarn install and test'
-    container: node:8
+      displayName: 'yarn install and test'    
