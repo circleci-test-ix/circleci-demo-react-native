@@ -20,6 +20,4 @@ steps:
     yarn test
   displayName: 'yarn install and test'
 
-resources:
-  containers:
-    - container: 'node:8'
+container: node:8
