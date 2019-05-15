@@ -15,7 +15,7 @@ stages:
     pool:
       name: 'Default'
     steps:
-      - script: |
+    - script: | 
         yarn install
         yarn test
-      displayName: 'yarn install and test'    
+      displayName: 'yarn install and test'
