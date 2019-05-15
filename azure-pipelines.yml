@@ -9,7 +9,7 @@ trigger:
 stages:
 - stage: build
   jobs:
-  - job: run-node-steps
+  - job: run_node_steps
     pool:
       name: Default
     steps:
