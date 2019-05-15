@@ -6,13 +6,15 @@
 trigger:
 - azure
 
-pool:
-  name: 'Default'
-
-steps:
-- script: |
-    yarn install
-    yarn test
-  displayName: 'yarn install and test'
-
-container: node:8
+stages:
+- stage: 'build'
+  jobs:
+  - job: 'run yarn install and tests'
+    pool:
+      name: 'Default'
+    steps:
+      - script: |
+        yarn install
+        yarn test
+      displayName: 'yarn install and test'
+    container: node:8
