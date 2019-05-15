@@ -11,6 +11,8 @@ https://codebuild.us-east-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoieE
 
 Bitrise: [![Build Status](https://app.bitrise.io/app/0401cf1dabc1a038/status.svg?token=e-K2oonKyQ5Zy65WHC2YNw)](https://app.bitrise.io/app/0401cf1dabc1a038)
 
+Azure: [![Build Status](https://dev.azure.com/ryanmanns0778/ImagineX%20Dev/_apis/build/status/circleci-test-ix.circleci-demo-react-native?branchName=master)](https://dev.azure.com/ryanmanns0778/ImagineX%20Dev/_build/latest?definitionId=2&branchName=master)
+
 ## Building and running locally
 
 1. Run `yarn` to install the JS dependencies.
