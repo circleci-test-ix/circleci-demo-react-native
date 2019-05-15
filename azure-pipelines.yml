@@ -11,7 +11,7 @@ stages:
   jobs:
   - job: run-node-steps
     pool:
-      name: 'Default'
+      name: Default
     steps:
     - script: | 
         yarn install
