@@ -30,8 +30,7 @@ stages:
         echo hello android
   - job: ios
     pool:
-      name: Default
-    container: node:8
+      name: macos-ix-laptop
     steps:
     - script: | 
         echo hello ios
