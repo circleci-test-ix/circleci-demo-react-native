@@ -18,3 +18,20 @@ stages:
         yarn install
         yarn test
       displayName: 'yarn install and test'
+
+- stage: apps
+  jobs:
+  - job: android
+    pool:
+      name: Default
+    container: openjdk:8-jdk
+    steps:
+    - script: | 
+        echo hello android
+  - job: ios
+    pool:
+      name: Default
+    container: node:8
+    steps:
+    - script: | 
+        echo hello ios
