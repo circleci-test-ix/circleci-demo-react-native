@@ -6,6 +6,8 @@
 trigger:
 - azure
 
+container: node:8
+
 stages:
 - stage: 'build'
   jobs:
