@@ -19,3 +19,7 @@ steps:
     yarn install
     yarn test
   displayName: 'yarn install and test'
+
+resources:
+  containers:
+    - container: 'node:8'
