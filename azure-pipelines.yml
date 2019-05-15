@@ -12,6 +12,7 @@ stages:
   - job: run_node_steps
     pool:
       name: Default
+    container: node:8
     steps:
     - script: | 
         yarn install
