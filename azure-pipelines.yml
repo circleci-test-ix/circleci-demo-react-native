@@ -9,9 +9,9 @@ trigger:
 container: node:8
 
 stages:
-- stage: 'build'
+- stage: build
   jobs:
-  - job: 'run yarn install and tests'
+  - job: run-node-steps
     pool:
       name: 'Default'
     steps:
