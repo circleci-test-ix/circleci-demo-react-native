@@ -34,3 +34,30 @@ stages:
     steps:
     - script: | 
         echo hello ios
+
+- stage: stage3
+  jobs:
+  - job: stage3_job
+    pool:
+      name: Default
+    steps:
+    - script: echo stage3
+      displayName: 'echo stage3'
+
+- stage: stage4
+  jobs:
+  - job: stage4_job
+    pool:
+      name: Default
+    steps:
+    - script: echo stage4
+      displayName: 'echo stage4'
+
+- stage: stage5
+  jobs:
+  - job: stage5_job
+    pool:
+      name: Default
+    steps:
+    - script: echo stage5
+      displayName: 'echo stage5'
