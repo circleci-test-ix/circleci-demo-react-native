@@ -22,5 +22,14 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-native": "^0.59.8"
-  }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ]
+}
 }
