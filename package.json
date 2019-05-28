@@ -16,8 +16,10 @@
     "test": "node node_modules/jest/bin/jest.js"
   },
   "jest": {
-    "preset": "jest-expo",
-    "testResultsProcessor": "jest-junit"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
   },
   "dependencies": {
     "react": "^16.8.6",
