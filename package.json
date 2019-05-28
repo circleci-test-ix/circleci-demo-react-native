@@ -19,7 +19,7 @@
     "testResultsProcessor": "jest-junit"
   },
   "dependencies": {
-    "react": "16.0.0",
+    "react": "^16.8.6",
     "react-native": "^0.59.8"
   }
 }
